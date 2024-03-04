@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yazenhealth.exponabug"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,22 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "83c4398b-db5b-499d-90cb-1998f36dc5f8"
+      }
     }
   }
 }
